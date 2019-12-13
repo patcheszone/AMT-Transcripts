@@ -23,7 +23,7 @@ These instructions will get you a copy of the project up on your local machine f
 
 ```bash
 git clone https://github.com/darwingrosse/AMT-Transcripts.git
-cd AMT-Transcripts
+cd AMT-Transcripts/App
 npm install
 ```
 
@@ -71,7 +71,7 @@ Options:
 To generate an HTML file with the ability to play the audio podcast:
 
 ```bash
-./tr-parse.js audio transcript-0005.json -s Darwin 'Barry Moon' -r November 10, 2013 -a path_to_podcast_audio/Podcast_005_BMoon.mp3 -o 6.1
+./tr-parse.js audio transcript-0005.json -s Darwin 'Barry Moon' -r 'November 10, 2013' -a path_to_podcast_audio/Podcast_005_BMoon.mp3 -o 6.1
 ```
 * `audio`: This invokes the `audio` subcommand
 * `transcript-0005.json`: The name of the json source file.
@@ -92,7 +92,7 @@ e.g.:
 ```
 
 The generated html file will have the same stem as the provided json file but with the
-`.html` extension and it will be stored in the `HTML` directory. E.g. 
+`.html` extension and it will be stored in the `HTML` directory. E.g.
 `HTML/transcript-0005.html`
 If the `audio` subcommand is used, the generated `html` file will have the same
 name with `_audio` appended before the extension, e.g.
